@@ -1,0 +1,50 @@
+section.design
+      color: white
+      background:
+            color: #1769ff
+            opacity: 0.3
+      padding: 50px 0px
+      transition: background-color 200ms ease-in-out
+
+      .home-lead
+            text-align: center
+            line-height: 2
+            @media (max-width: 370px)
+                  font-size: 30px
+
+      .home-cta
+            font-size: 24px
+            color: #1769ff
+
+      .design-img-link
+            display: block
+            float: left
+            width: calc(33.33% - 14px)
+            border: 2px solid white
+            box-shadow: 0px 3px 10px rgba(0,0,0,0.2)
+            margin: 5px
+            transition: transform 200ms ease-in-out
+
+            &:hover
+                  transform: scale(1.2)
+
+            @media (max-width: 500px)
+                  width: calc(50% - 14px)
+
+            img
+                  max-width: 100%
+                  display: block
+
+      .cf
+            clear: both
+            margin-bottom: 20px
+
+      @media (max-width: 640px)
+            .home-lead
+                  font-size: 24px
+
+            .col-2
+                  width: auto
+                  height: auto
+                  display: block
+                  padding: 0px 20px

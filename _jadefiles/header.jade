@@ -1,0 +1,22 @@
+mixin nav-content()
+      ul
+            li: a(href="#about").active About
+            li: a(href="#youtube") YouTube
+            li: a(href="#testimonial") Testimonial
+            li: a(href="#articles") Articles
+            li: a(href="#design") Behance
+            //- li: a(href="{{site.baseurl}}/designtips.html") DesignTips
+            li: a(href="#contact") Contact
+
+.mobile-nav
+      +nav-content()
+      
+header
+      .header-position
+            h1.logo Shanesh Nepali
+            
+            nav.site-nav
+                  +nav-content()
+                        
+            a(href="mailto:sns.nep@gmail.com").email-link +email me
+            .mobile-nav-toggle: span

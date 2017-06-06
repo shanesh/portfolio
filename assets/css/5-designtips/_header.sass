@@ -1,0 +1,57 @@
+// Define Color
+$banner-color: #101010
+section.designtips
+      padding: 0
+
+      .slanted-affect
+            position: relative
+            width: 100%
+            height: 100vh
+            background: inherit
+
+      .slanted-affect::after
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            left: 0
+            bottom: 0
+            background: #8e44ad
+            width: 100%
+            height: 100%
+            transform: skewY(-5deg)
+            transform-origin: top left
+
+      .banner
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            // padding: 0px 20px
+
+            h2,.text-block,.go-back
+                  z-index: 1
+
+            h2
+                  color: $banner-color
+                  line-height: 2
+                  position: relative
+                  z-index: 1
+                  display: flex
+                  align-items: center
+                  @media (max-width: 640px)
+                        font-size: 32px
+            .text-block
+                  font-size: 18px
+                  line-height: 1.5
+                  color: $banner-color
+                  text-align: center
+
+            .go-back
+                  position: fixed
+                  top: 50px
+                  left: 60px
+                  font-size: 16px
+                  color: $banner-color
+                  &:hover
+                        text-decoration: line-through

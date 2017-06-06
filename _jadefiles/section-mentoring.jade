@@ -1,0 +1,20 @@
+mixin face(face, words, name, designation)
+      li.face(style="background-image: url(#{face});")
+            .bubble
+                  p #{words}
+                  div - #{name}
+                  cite &nbsp;&nbsp; #{designation}
+            
+section.mentoring#testimonial
+      .flex.flex--center
+            .col-1
+                  ul.faces
+                        +face("https://lh5.googleusercontent.com/-62ta52Ql7mM/AAAAAAAAAAI/AAAAAAAAAFI/1kMu_DwVfuA/photo.jpg","Shanesh was a pleasure to work with! Fast with delivery and easy to communicate with, and more importantly - he's great with receiving feedback and making the adjustments you need. With these qualities, our time on this project went by just as quick and smooth as one could hope for. Will definitely look to hire Shanesh again in the future.","Hemanta Balami","Managing Director")
+                        +face("https://pbs.twimg.com/profile_images/1341186261/pasfoto_pp_400x400.jpg","I have hired Shanesh twice now, and will go back to him with any other graphic design work I have. He is very quick, does high quality work and is very easy to communicate with in getting edits done.","Elizabeth Finne", "Upwork")
+                        //- +face("http://www.systems.caltech.edu/dsp/ppv/VaidyanathanCompLOW.jpg","Great!!!!! nice work...","Nathan Jacobs" )
+                        //- +face("http://tsnimages.tsn.ca/ImageProvider/AssetImage?seoId=kerry-fraser&width=165","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been...","Nathan Jacobs" )
+                        //- +face("http://ep01.epimg.net/politica/imagenes/2017/03/10/actualidad/1489176947_959470_1489177345_noticia_normal.jpg","Great!!!!! nice work...","Nathan Jacobs" )
+                        li.back-btn.face
+            .col-1
+                  p.home-lead.outdented ... What people says about me ...
+                  //- a(href="").home-cta Write A Review

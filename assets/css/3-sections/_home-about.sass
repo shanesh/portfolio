@@ -1,0 +1,53 @@
+section.about
+      background:
+            position: center top
+            size: cover
+      color: #eaeaea
+      position: relative
+      overflow: hidden
+
+      video
+            position: absolute
+            top: 65%
+            left: 50%
+            transform: translate(-50%, -50%)
+            z-index: -1
+            min-width: 100%
+            min-height: 100%
+            width: auto
+            height: auto
+            background: transparent
+
+      .text-block
+            background: rgba(0,0,125,0.4)
+            margin: -70px 0px
+            padding-top: 70px
+            position: relative
+            top: 0
+            bottom: 0
+            left: 0
+            right: 0
+            z-index: 0
+
+      h2
+            color: #fff
+            font:
+                  size: 60px
+                  family: 'Fire Sans', sans-serif
+                  weight: 600
+            line-height: 1
+            margin-left: -108px
+            margin-top: 0
+
+      .home-lead
+            padding-bottom: 180px
+
+@media (max-width: 640px)
+      section.about
+            h2, .home-lead
+                  margin-left: auto
+                  margin-right: auto
+                  max-width: 300px
+
+            .push-right
+                  margin-left: 10px

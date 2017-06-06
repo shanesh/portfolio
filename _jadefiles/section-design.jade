@@ -1,0 +1,23 @@
+mixin design-img(link, img, color)
+      a(href="#{link}" data-color="#{color}").design-img-link
+            img(src="assets/img/design-img/behance/#{img}")
+
+section.design#design
+      .flex.flex--center
+            .flex.flex--center.behance(data-orig-color="#1769ff")
+                  .col-2
+                        p.home-lead ...Updating Behance...
+                        +design-img('https://www.behance.net/gallery/47495357/Merry-Christmas-and-Happy-New-Year', 'be-1.jpg', 'orange')
+                        +design-img('https://www.behance.net/gallery/44306557/The-Big-Stone', 'be-2.jpeg', '#aeb3b0')
+                        +design-img('https://www.behance.net/gallery/40214993/WOLF', 'be-3.jpg', '#38decc')
+                        +design-img('https://www.behance.net/gallery/42173087/S', 'be-4.jpg', '#d21d16')
+                        +design-img('https://www.behance.net/gallery/37906205/Wolfmatrix', 'be-5.jpg', '#890cee')
+                        +design-img('https://www.behance.net/gallery/43072583/R-alphabet', 'be-6.jpg', '#d6d599')
+                        +design-img('https://www.behance.net/gallery/44305603/Cycling', 'be-7.jpeg', '#5aabd5')
+                        +design-img('https://www.behance.net/gallery/38560027/love', 'be-8.png', '#4c4c4c')
+                        .cf
+                        a(href="https://www.behance.net/shanesh" target="_blank").home-cta See more on Behance
+                         
+            //- .col-50.flex.flex--center
+            //-       .col-1
+            //-             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
