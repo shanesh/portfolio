@@ -1,7 +1,6 @@
 name: Shanesh Nepali
 markdown: kramdown
 highlighter: rouge
-highlighter: pygments # or rouge or null
 base-url: "/portfolio"
 url: "https://shanesh.github.io"
 exclude: ["node_modules", "gulpfile.js", "package.json"]
